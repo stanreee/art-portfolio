@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section class="home">
+            <div class="container">
+                <img src="images/artwork/ocean.png" alt="background" id="bg">
+            </div>
+            <div class="foreground">
+                <div class="title">
+                    <h1>GEOFFREY WANG</h1>
+                </div>
+                <img src="images/down-arrow.png" onclick="galleryButton()" class="scrolldown-button"></img>
+            </div>
+            
+        </section>
+        <section class="artwork">
+            <section class="gallery" id ="gallery-scroll">
+                <div class="thumbnails" id="thumbnails"></div>
+            </section>
+            <div class="navigation-bar">
+            </div>
+            <div class="preview" id="preview">
+                <div class="images" id="gallery-id" onclick=""></div>
+                <div class="arrow-buttons">
+                    <img src="images/left-arrow.png" alt="left-arrow" id="left-arrow" onclick="changeSlideLeft()">
+                    <img src="images/right-arrow.png" alt="right-arrow" id="right-arrow" onclick="changeSlideRight()">
+                </div>
+                <div class="exit-button">
+                    <img src="images/cross.png" alt="cross" id="cross" onclick="hideSlides()">
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <section class="icons">
+                <div class="contact">
+                    <h1>contact</h1>
+                </div>
+                <div class="instagram">
+                    <img src="images/instagram.png" alt="instagram">
+                    <p>@geo0o0o0o</p>
+                </div>
+                <div class="email">
+                    <img src="images/email.png" alt="email">
+                    <p>geoffrey@email.com</p>
+                </div>
+            </section>
+            <section class="details">
+                <div class="header">
+                    <h1>about</h1>
+                </div>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, expedita velit neque voluptate labore soluta repellendus qui cum facere, veritatis nisi dolorum asperiores natus iste suscipit corrupti ipsum ad. Iusto.</p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="scripts/constants.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/gallery.js"></script>
+</body>
+</html>
